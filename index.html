@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/657de39a82.js" crossorigin="anonymous"></script>
+  <title>Unit Converter | Dev Hub Asmr</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Unit Converter</h1>
+    <p id="results">0</p>  
+    
+    <div class="from section">
+      <label for="user-value">Value</label>
+      <input type="number" id="user-value" placeholder="Enter Value:">
+      <label for="choose-category">Category:</label>
+        <div class="custom-dropdown" id="choose-category">
+          <span class="selected">Time<i class="fa-solid fa-caret-down"></i></span>
+          <div class="dropdown-content"></div>
+        </div>
+    </div>
+
+    <div class="unit-section">
+      <div class="from">
+        <label for="from-unit">From Unit:</label>
+        <div class="custom-dropdown" id="from-unit">
+          <span class="selected">Ns<i class="fa-solid fa-caret-down"></i></span>
+          <div class="dropdown-content"></div>
+        </div>
+      </div>
+      <div class="from">
+        <label for="to-unit">To Unit:</label>
+        <div class="custom-dropdown" id="to-unit">
+          <span class="selected">Ns<i class="fa-solid fa-caret-down"></i></span>
+          <div class="dropdown-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="convert">Convert</button>
+      <button id="reset">Reset</button>
+    </div>
+  
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
